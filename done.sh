@@ -19,35 +19,37 @@ am start -a android.settings.WPC_SETTINGS 2>/dev/null
 
 pm disable com.neusoft.ssp.ces.c4.car.assistant # QDLink
 
-pm disable com.neusoft.na.navigation # Navigation app
-pm disable ecarx.naviservice # Navigation Service
-pm disable com.ecarx.naviwidget # Navigation widget
+pm disable com.neusoft.na.navigation # Navigation (Navigation app)
+pm disable ecarx.naviservice # LBSNavi (Navigation Service)
+pm disable com.ecarx.naviwidget # Navi (Navigation widget)
 
-pm disable ecarx.weather # Weather app
-pm disable ecarx.upgrade # Updater (Cannot connect to server)
-pm disable ecarx.membercenter # Member Center (Cannot connect to server)
-pm disable com.ecarx.thememanager # Theme app (Cannot connect to server)
+pm disable ecarx.weather # weather
+pm disable ecarx.upgrade # XCUpgradeService (Cannot connect to server)
+pm disable ecarx.membercenter # Member Centre (Cannot connect to server)
+pm disable com.ecarx.thememanager # Themes (Cannot connect to server)
 
-pm disable com.qihoo360.vehiclesafe # Qihoo 360 Car Defender
-pm disable com.chima.vulcan # ChiMaster (Qihoo 360 backdoor)
+pm disable com.qihoo360.vehiclesafe # 360 Car Defender Basic Service (Qihoo 360)
+pm disable com.chima.vulcan # com.android.chimaster (Qihoo 360 backdoor)
 
-pm disable ecarx.autosecure # Memory Clean Up app
+pm disable ecarx.autosecure # Clean Up (Memory Clean Up)
 pm disable com.neusoft.onlinemusic # JOOX Music
 
 pm disable com.android.onetimeinitializer # One Time Init
 pm disable com.android.providers.applications # Search Applications Provider
 pm disable com.android.webview # Android System WebView (Outdated, use Opera 66.6.3445.73002 or Kiwi 96.0.4664.46 or Edge 95.0.1020.55 for web browsing)
-pm disable com.mediatek.mtklogger # MTK Logger
-pm disable com.mediatek.fwk.plugin # Mediatek Plugin System
+pm disable com.mediatek.mtklogger # MTKLogger
+pm disable com.mediatek.fwk.plugin # FwkPlugin (Mediatek Plugin System)
 
 pm disable com.gosuncn.toolsInstall # ToolsInstall
-pm disable org.xwalk.core # Crosswalk Project Runtime
+pm disable org.xwalk.core # XWalkCoreLibrary (Crosswalk Project Runtime)
 
-pm disable com.neusoft.dvrlogin # Geely Driving Video Recorder app
-pm disable com.neusoft.cardvr # Geely Driving Video Recorder
+pm disable com.neusoft.dvrlogin # DVR (Geely Driving Video Recorder app)
+pm disable com.neusoft.cardvr # Driving record (Geely Driving Video Recorder)
 
-pm disable ecarx.video # Video app
-pm disable ecarx.photo # Photo app
+pm disable ecarx.video # Video
+pm disable ecarx.photo # Photo
+
+# pm disable com.neusoft.shockwave.tboxclient # TBoxClient (Disables 4G, only disable if 4G subscription expired.)
 
 
 echo "====== renaming the script folder ========"
